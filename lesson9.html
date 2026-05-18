@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Choral Speaking - Lesson 9: Yummy Foods</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Nunito:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* 1. THE SETUP & NON-NEGOTIABLE STRUCTURE */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: #cbd5e1; display: grid; place-items: center; gap: 20px; padding: 20px 0; min-height: 100vh; }
+        .slide-container { width: 1280px; height: 720px; background-color: #ffffff; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); position: relative; overflow: hidden; font-family: 'Nunito', sans-serif; display: flex; flex-direction: column; color: #1e293b; margin-bottom: 20px;}
+        
+        /* 1.1 BACKGROUND DESIGN (WARM FOOD BLOBS) */
+        .slide-container::before { content: ''; position: absolute; top: -150px; right: -100px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(251, 146, 60, 0.3) 0%, rgba(251, 146, 60, 0) 70%); border-radius: 50%; z-index: 0; }
+        .slide-container::after { content: ''; position: absolute; bottom: -200px; left: -150px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(244, 114, 182, 0.2) 0%, rgba(253, 224, 71, 0.2) 70%); border-radius: 50%; z-index: 0; }
+        
+        .slide-inner { width: 100%; height: 100%; padding: 50px 60px; display: flex; flex-direction: column; position: relative; z-index: 1; }
+        
+        h1, h2, h3 { font-family: 'Comfortaa', cursive; color: #1e293b; margin: 0; }
+        h1 { font-size: 90px; font-weight: 700; color: #ea580c; text-shadow: 3px 3px 0px #fed7aa; }
+        h2.slide-title { font-size: 42px; font-weight: 700; margin-bottom: 20px; background-color: #ffffff; padding: 10px 30px; border-radius: 50px; border: 4px solid #ea580c; box-shadow: 4px 4px 0px #ea580c; display: inline-block; width: fit-content; }
+        h3 { font-size: 34px; margin-bottom: 15px; }
+        p, li { font-size: 30px; line-height: 1.5; font-weight: 600; color: #334155; }
+        
+        .subtitle { font-size: 36px; color: #1e293b; margin-top: 20px; background-color: #ffffff; padding: 15px 40px; border-radius: 50px; border: 4px dashed #f97316; display: inline-block; font-weight: 800; }
+        .content-area { display: flex; flex-direction: column; flex-grow: 1; width: 100%; justify-content: center; }
+        
+        /* 3. LAYOUT DEFINITIONS */
+        .title-layout { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; height: 100%;}
+        .two-column { display: flex; width: 100%; gap: 40px; height: 480px; align-items: center; }
+        .two-column > div { flex: 1; height: 100%; display: flex; flex-direction: column; justify-content: center; }
+        
+        .content-box { background-color: #ffffff; border-radius: 30px; padding: 35px 40px; box-shadow: 0 10px 20px rgba(0,0,0,0.08); border: 4px solid #ffffff; display: flex; flex-direction: column; justify-content: center; height: 100%;}
+        .content-box.orange { border-color: #f97316; background-color: #fff7ed; }
+        .content-box.pink { border-color: #f472b6; background-color: #fdf2f8; }
+        .content-box.yellow { border-color: #fbbf24; background-color: #fffbeb; }
+        
+        .image-wrapper { width: 100%; height: 100%; border-radius: 30px; background-color: #ffffff; padding: 20px; border: 4px solid #e2e8f0; display: flex; align-items: center; justify-content: center; overflow: hidden; font-size: 150px; }
+        
+        /* Scaffolding Cue Boxes */
+        .cue-box { background-color: #f8fafc; border: 3px dashed #94a3b8; border-radius: 20px; padding: 20px; margin-bottom: 20px; display: flex; align-items: center; gap: 15px;}
+        .cue-icon { font-size: 40px; }
+        .cue-text { font-size: 24px; font-weight: 800; color: #475569; line-height: 1.4;}
+
+        /* Q&A / Ending Layout */
+        .qa-layout { text-align: center; background-color: #ffffff; padding: 60px; border-radius: 40px; box-shadow: 0 15px 30px rgba(0,0,0,0.1); border: 5px solid #ea580c; max-width: 900px; }
+        .qa-layout h2 { font-size: 80px; color: #ea580c; margin-bottom: 20px; }
+
+        /* Poem Specific Styling for Readability */
+        .poem-text { font-size: 38px !important; line-height: 1.6 !important; margin-bottom: 10px; text-align: center; color: #1e293b !important; }
+        .hl-orange { color: #ea580c; font-weight: 900; font-size: 42px;}
+        .hl-pink { color: #db2777; font-weight: 900; font-size: 42px;}
+        .hl-gray { color: #64748b; font-weight: 900; font-size: 42px;}
+        .hl-red { color: #ef4444; font-weight: 900; font-size: 42px;}
+        .hl-blue { color: #0284c7; font-weight: 900; font-size: 42px;}
+    </style>
+</head>
+<body>
+
+<div class="slide-container" id="slide1">
+    <div class="slide-inner title-layout">
+        <h1>Yummy Foods! 🍕🍦🍫</h1>
+        <p class="subtitle">Lesson 9: The Tastiest Poems</p>
+    </div>
+</div>
+
+<div class="slide-container" id="slide2">
+    <div class="slide-inner">
+        <h2 class="slide-title">Warm-up: Snack Time! 😋</h2>
+        <div class="content-area">
+            <div class="two-column">
+                <div class="text-column">
+                    <div class="content-box orange">
+                        <h3 style="color: #ea580c; font-size: 45px;">What is your favorite food?</h3>
+                        <br>
+                        <ul style="list-style: none; margin-left: 0; padding-left: 0;">
+                            <li style="margin-bottom: 20px;">🍫 Do you like Chocolate?</li>
+                            <li style="margin-bottom: 20px;">🍕 Do you like Pizza?</li>
+                            <li style="margin-bottom: 20px;">🍦 Do you like Ice Cream?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="image-column">
+                    <div class="image-wrapper" style="border-color: #f97316; flex-direction: column;">
+                        <div>🤤</div>
+                        <p style="font-size: 24px; color: #94a3b8; font-weight: bold;">Yummy!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide3">
+    <div class="slide-inner">
+        <h2 class="slide-title">Poem 1: Chocolate Factory (1)</h2>
+        <div class="content-area">
+            <div class="two-column">
+                <div class="text-column">
+                    <div class="content-box" style="border-color: #8b5cf6; background-color: #f5f3ff; margin-bottom: 20px;">
+                        <p class="poem-text">When I am <span class="hl-gray">sad</span> or <span class="hl-gray">tired</span>,</p>
+                        <p class="poem-text">I close my eyes and find,</p>
+                        <p class="poem-text">The sweetest place in all the world,</p>
+                        <p class="poem-text">The chocolate factory in my mind!</p>
+                    </div>
+                </div>
+                <div class="text-column">
+                    <div class="cue-box" style="border-color: #94a3b8; background-color: #f1f5f9;">
+                        <div class="cue-icon">🏃</div>
+                        <div class="cue-text">Action: Close your eyes. (閉上眼睛)</div>
+                    </div>
+                    <div class="cue-box" style="border-color: #94a3b8; background-color: #f1f5f9;">
+                        <div class="cue-icon">🗣️</div>
+                        <div class="cue-text">Voice: Sad and tired. (聲音低沉疲倦)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide4">
+    <div class="slide-inner">
+        <h2 class="slide-title">Poem 1: Chocolate Factory (2)</h2>
+        <div class="content-area">
+            <div class="two-column">
+                <div class="text-column">
+                    <div class="content-box" style="border-color: #8b5cf6; background-color: #f5f3ff; margin-bottom: 20px;">
+                        <p class="poem-text">There are <span class="hl-orange">rivers of fudge</span>,</p>
+                        <p class="poem-text">And marshmallow land,</p>
+                        <p class="poem-text">Where the <span class="hl-pink">magic flows</span>,</p>
+                        <p class="poem-text">Right into my hand!</p>
+                    </div>
+                </div>
+                <div class="text-column">
+                    <div class="cue-box" style="border-color: #f472b6; background-color: #fdf2f8;">
+                        <div class="cue-icon">🏃</div>
+                        <div class="cue-text">Action: Open your hands! (張開雙手迎接魔法)</div>
+                    </div>
+                    <div class="cue-box" style="border-color: #f472b6; background-color: #fdf2f8;">
+                        <div class="cue-icon">🗣️</div>
+                        <div class="cue-text">Voice: Happy and Loud! (開心大聲)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide5">
+    <div class="slide-inner">
+        <h2 class="slide-title" style="border-color: #ef4444;">Poem 2: The Pizza Debate (1) 🍕</h2>
+        <div class="content-area">
+            <div class="two-column">
+                <div class="text-column">
+                    <div class="content-box red" style="margin-bottom: 20px;">
+                        <p class="poem-text">What goes on a pizza?</p>
+                        <p class="poem-text">Let's have a great debate!</p>
+                        <p class="poem-text" style="margin-top: 15px;"><span class="hl-orange">Pineapple</span> or not?</p>
+                        <p class="poem-text">What is on your plate?</p>
+                    </div>
+                </div>
+                <div class="text-column">
+                    <div class="cue-box" style="border-color: #fca5a5; background-color: #fef2f2;">
+                        <div class="cue-icon">🤔</div>
+                        <div class="cue-text">Action: Think or shake your head. (做出思考或搖頭的動作)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide6">
+    <div class="slide-inner">
+        <h2 class="slide-title" style="border-color: #ef4444;">Poem 2: The Pizza Debate (2) 🍕</h2>
+        <div class="content-area">
+            <div class="two-column">
+                <div class="text-column">
+                    <div class="content-box red" style="margin-bottom: 20px;">
+                        <p class="poem-text">"<span class="hl-red">Spicy is best!</span>"</p>
+                        <p class="poem-text">The pepperoni cried,</p>
+                        <p class="poem-text" style="margin-top: 15px;">"<span class="hl-gray">Quiet is the quest,</span>"</p>
+                        <p class="poem-text">The mushroom softly sighed.</p>
+                    </div>
+                </div>
+                <div class="text-column">
+                    <div class="cue-box" style="border-color: #ef4444; background-color: #fef2f2;">
+                        <div class="cue-icon">🗣️</div>
+                        <div class="cue-text">Voice 1: LOUD shout for Spicy! (大聲呼喊)</div>
+                    </div>
+                    <div class="cue-box" style="border-color: #94a3b8; background-color: #f8fafc;">
+                        <div class="cue-icon">🤫</div>
+                        <div class="cue-text">Voice 2: Whisper for Quiet. (細聲表達)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide7">
+    <div class="slide-inner">
+        <h2 class="slide-title" style="border-color: #0ea5e9;">Poem 3: Ice Cream Race (1) 🍦</h2>
+        <div class="content-area">
+            <div class="two-column">
+                <div class="text-column">
+                    <div class="content-box" style="border-color: #0ea5e9; background-color: #f0f9ff; margin-bottom: 20px;">
+                        <p class="poem-text" style="font-size: 45px !important;"><span class="hl-blue">Three scoops</span> race down,</p>
+                        <p class="poem-text" style="font-size: 45px !important;">In a summer afternoon!</p>
+                    </div>
+                </div>
+                <div class="text-column">
+                    <div class="cue-box" style="border-color: #7dd3fc; background-color: #e0f2fe;">
+                        <div class="cue-icon">🖐️</div>
+                        <div class="cue-text">Action: Show 3 fingers! (用手勢比出三個雪糕球)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide8">
+    <div class="slide-inner">
+        <h2 class="slide-title" style="border-color: #0ea5e9;">Poem 3: Ice Cream Race (2) 🍦</h2>
+        <div class="content-area">
+            <div class="two-column">
+                <div class="text-column">
+                    <div class="content-box" style="border-color: #0ea5e9; background-color: #f0f9ff; padding: 25px 30px;">
+                        <p class="poem-text" style="font-size: 32px !important; margin-bottom: 5px;"><span class="hl-pink" style="font-size: 36px;">Strawberry giggles,</span></p>
+                        <p class="poem-text" style="font-size: 32px !important; margin-bottom: 5px;">"I will win it soon!"</p>
+                        <p class="poem-text" style="font-size: 32px !important; margin-top: 15px; margin-bottom: 5px;"><span class="hl-orange" style="font-size: 36px;">Chocolate beats with power,</span></p>
+                        <p class="poem-text" style="font-size: 32px !important; margin-bottom: 5px;">"I am strong and bold!"</p>
+                        <p class="poem-text" style="font-size: 32px !important; margin-top: 15px; margin-bottom: 5px;"><span class="hl-gray" style="font-size: 36px;">Vanilla is calm and wise,</span></p>
+                        <p class="poem-text" style="font-size: 32px !important; margin-bottom: 0;">"Just stay nice and cold."</p>
+                    </div>
+                </div>
+                <div class="text-column">
+                    <div class="cue-box" style="border-color: #fbcfe8; background-color: #fdf2f8; padding: 15px; margin-bottom: 15px;">
+                        <div class="cue-icon">🍓</div>
+                        <div class="cue-text" style="font-size: 22px;">Strawberry: High & sweet! (高音甜美)</div>
+                    </div>
+                    <div class="cue-box" style="border-color: #fed7aa; background-color: #fff7ed; padding: 15px; margin-bottom: 15px;">
+                        <div class="cue-icon">🍫</div>
+                        <div class="cue-text" style="font-size: 22px;">Chocolate: Strong & confident! (自信有力)</div>
+                    </div>
+                    <div class="cue-box" style="border-color: #e2e8f0; background-color: #f8fafc; padding: 15px; margin-bottom: 0;">
+                        <div class="cue-icon">🍦</div>
+                        <div class="cue-text" style="font-size: 22px;">Vanilla: Calm & gentle. (平靜溫柔)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide9">
+    <div class="slide-inner">
+        <h2 class="slide-title" style="border-color: #22c55e;">Stage Etiquette (舞台禮儀) 🌟</h2>
+        <div class="content-area">
+            <div class="content-box" style="border-color: #22c55e; background-color: #f0fdf4; text-align: center;">
+                <p class="poem-text" style="font-size: 40px !important; color: #16a34a !important; font-weight: bold;">How to be a superstar!</p>
+                <br>
+                <p class="poem-text" style="font-size: 35px !important;">😊 Smile when you walk in! (微笑進場)</p>
+                <p class="poem-text" style="font-size: 35px !important;">👀 Look at the audience! (眼神接觸，不要低頭)</p>
+                <p class="poem-text" style="font-size: 35px !important;">⏸️ Pause before you start. (朗讀篇名前先停頓)</p>
+                <p class="poem-text" style="font-size: 35px !important;">😅 Smile & Continue! (忘詞自然接下去)</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide10">
+    <div class="slide-inner" style="align-items: center; justify-content: center;">
+        <div class="qa-layout">
+            <h2>Great Job! 👏</h2>
+            <p style="font-size: 40px; margin-bottom: 20px;">You are all delicious readers!</p>
+            <div style="background-color: #fff7ed; padding: 20px; border-radius: 20px; border: 3px dashed #ea580c;">
+                <p style="color: #ea580c; font-weight: 800; font-size: 35px;">Homework (功課): 📹 / 🎙️</p>
+                <p style="font-size: 30px;">Record a video or audio of your favorite yummy poem!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
